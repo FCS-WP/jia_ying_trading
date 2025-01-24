@@ -1,3 +1,10 @@
-.header-ct-right{
-  display: none !important;
+.header-bottom-inner {
+  .header-ct-right {
+    display: none !important;
+  }
+}
+.footer-menu{
+  .menu-container {
+    border: 0px !important;
+  }
 }
