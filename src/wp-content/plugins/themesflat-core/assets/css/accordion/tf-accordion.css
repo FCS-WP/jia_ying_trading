@@ -1,0 +1,129 @@
+.tf-accordion .tf-accordion-item:last-of-type {
+    margin-bottom: 0 !important;
+}
+
+.tf-accordion .accordion-title {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    justify-content: space-between;
+}
+
+.accordion-icon-open,
+.tf-accordion-item.active .accordion-icon-close {
+    display: none;
+}
+
+.accordion-icon-close,
+.tf-accordion-item.active .accordion-icon-open {
+    display: block;
+}
+
+.tf-accordion .accordion-title > span.wrap-accordion-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.accordion-title,
+.wrap-accordion-icon {
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.tf-accordion .tf-accordion-item .accordion-title .title-text {
+    font-size: 16px;
+    font-family: 'Inter';
+    font-weight: 600;
+    line-height: 18px;
+    color: #40484E;
+}
+
+.tf-accordion .tf-accordion-item .accordion-content {
+    display: flex;
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #333E48;
+    padding: 11px 33px 10px 6px;
+}
+
+.tf-accordion .tf-accordion-item .accordion-content svg,
+.tf-accordion .tf-accordion-item .accordion-content i {
+    flex-shrink: 0;
+    margin-right: 16px;
+    margin-top: 7px;
+}
+
+.tf-accordion .tf-accordion-item {
+    background: #fff;
+    padding: 10px 0px 9.5px;
+    border-bottom: 1px solid #EBEBEB;
+}
+
+.tf-accordion .tf-accordion-item .accordion-title .wrap-accordion-icon {
+    font-size: 13px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: -webkit-box;  
+    display: -moz-box;      
+    display: -ms-flexbox;   
+    display: -webkit-flex; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F5F5F5;
+}
+
+.tf-accordion .tf-accordion-item.active .accordion-title .wrap-accordion-icon {
+    background-color: #FF3D3D;
+}
+
+.tf-accordion .tf-accordion-item.active .accordion-title .title-text {
+    color: #FF3D3D;
+}
+
+
+.accordion-title span,
+.tf-accordion .accordion-title .accordion-icon {
+    color: #333E48;
+}
+
+.tf-accordion.style2 .tf-accordion-item.active .accordion-title span,
+.tf-accordion .tf-accordion-item.active .accordion-title .accordion-icon {
+    color: #fff;
+}
+
+.tf-accordion.style2 .tf-accordion-item.active {
+    background: #8B54FF;
+}
+
+.tf-accordion.style2 .tf-accordion-item .accordion-content {
+    color: #fff;
+    padding: 0px 20px 28px 33px;
+}
+
+.tf-accordion.style2 .tf-accordion-item {
+    background: #fff;
+    padding: 0px 8px 0px 30px;
+}
+
+
+@media only screen and (max-width: 767px) {
+    /* .tf-accordion.style2 .tf-accordion-item .accordion-content,
+    .tf-accordion .tf-accordion-item .accordion-content {
+        padding: 20px 0px 29px 0px;
+    }
+
+    .tf-accordion .tf-accordion-item,
+    .tf-accordion.style2 .tf-accordion-item {
+        background: #fff;
+        padding: 0px 0px 0px 15px;
+    } */
+}
